@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ประวัติการศึกษา</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Prompt",sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1d4ed8,#38bdf8);
+    min-height:100vh;
+}
+
+header{
+    background:rgba(0,0,0,.25);
+    backdrop-filter:blur(10px);
+    padding:18px 0;
+}
+
+nav{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd700;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:50px auto;
+}
+
+.title{
+    text-align:center;
+    color:white;
+    margin-bottom:50px;
+}
+
+.title h1{
+    font-size:45px;
+}
+
+.timeline{
+    position:relative;
+    margin:auto;
+}
+
+.timeline::before{
+    content:'';
+    position:absolute;
+    left:25px;
+    top:0;
+    width:4px;
+    height:100%;
+    background:white;
+}
+
+.card{
+    position:relative;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(10px);
+    border-radius:15px;
+    padding:25px;
+    margin-left:70px;
+    margin-bottom:35px;
+    color:white;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.card::before{
+    content:'';
+    position:absolute;
+    left:-58px;
+    top:30px;
+    width:20px;
+    height:20px;
+    background:#ffd700;
+    border-radius:50%;
+    border:4px solid white;
+}
+
+.card h2{
+    color:#ffe082;
+    margin-bottom:10px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    line-height:1.8;
+}
+
+footer{
+    text-align:center;
+    color:white;
+    padding:30px;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:15px;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+.timeline::before{
+    left:15px;
+}
+
+.card{
+    margin-left:45px;
+}
+
+.card::before{
+    left:-39px;
+}
+
+.title h1{
+    font-size:35px;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">Portfolio</div>
+
+<ul>
+<li><a href="index.html">หน้าหลัก</a></li>
+<li><a href="about.html">ประวัติส่วนตัว</a></li>
+<li><a href="education.html">การศึกษา</a></li>
+<li><a href="portfolio.html">ผลงาน</a></li>
+<li><a href="contact.html">ติดต่อ</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<div class="container">
+
+<div class="title">
+<h1>ประวัติการศึกษา</h1>
+<p>เส้นทางการศึกษาของฉัน</p>
+</div>
+
+<div class="timeline">
+
+<div class="card">
+<h2>ระดับประถมศึกษา</h2>
+<h3>โรงเรียน......................................</h3>
+<p>
+สำเร็จการศึกษาระดับประถมศึกษา<br>
+ปีการศึกษา ............<br>
+เกรดเฉลี่ย (GPAX) : ............
+</p>
+</div>
+
+<div class="card">
+<h2>ระดับมัธยมศึกษาตอนต้น</h2>
+<h3>โรงเรียน......................................</h3>
+<p>
+สำเร็จการศึกษาระดับมัธยมศึกษาตอนต้น<br>
+ปีการศึกษา ............<br>
+เกรดเฉลี่ย (GPAX) : ............
+</p>
+</div>
+
+<div class="card">
+<h2>ระดับมัธยมศึกษาตอนปลาย</h2>
+<h3>โรงเรียน......................................</h3>
+<p>
+กำลังศึกษาระดับชั้นมัธยมศึกษาปีที่ 6<br>
+แผนการเรียนคอมพิวเตอร์<br>
+เกรดเฉลี่ยสะสม (GPAX) : ............
+</p>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 My Portfolio | All Rights Reserved
+
+</footer>
+
+</body>
+</html>
