@@ -2,54 +2,240 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ประวัติส่วนตัว</title>
-<link rel="stylesheet" href="css/style.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Prompt",sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1d4ed8,#38bdf8);
+    min-height:100vh;
+}
+
+header{
+    background:rgba(0,0,0,.25);
+    backdrop-filter:blur(10px);
+    padding:18px 0;
+}
+
+nav{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#fff;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd700;
+}
+
+.container{
+    max-width:1100px;
+    margin:50px auto;
+    background:rgba(255,255,255,.12);
+    border-radius:20px;
+    backdrop-filter:blur(12px);
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+    display:flex;
+    flex-wrap:wrap;
+    overflow:hidden;
+}
+
+.left{
+    flex:1;
+    min-width:300px;
+    text-align:center;
+    padding:40px;
+}
+
+.left img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid white;
+    box-shadow:0 0 20px rgba(255,255,255,.5);
+}
+
+.left h2{
+    color:white;
+    margin-top:20px;
+}
+
+.left p{
+    color:#eee;
+    margin-top:10px;
+    line-height:1.7;
+}
+
+.right{
+    flex:2;
+    min-width:350px;
+    padding:50px;
+    color:white;
+}
+
+.right h1{
+    margin-bottom:30px;
+    font-size:40px;
+}
+
+.info{
+    display:grid;
+    grid-template-columns:180px 1fr;
+    row-gap:20px;
+    font-size:20px;
+}
+
+.info b{
+    color:#ffe082;
+}
+
+footer{
+    text-align:center;
+    color:white;
+    padding:25px;
+}
+
+@media(max-width:768px){
+
+.container{
+    margin:20px;
+}
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:15px;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+.right h1{
+    text-align:center;
+}
+
+.info{
+    grid-template-columns:1fr;
+}
+
+}
+</style>
+
 </head>
+
 <body>
 
 <header>
 
 <nav>
 
-<h2>Portfolio</h2>
+<div class="logo">Portfolio</div>
 
 <ul>
-
 <li><a href="index.html">หน้าหลัก</a></li>
-
 <li><a href="about.html">ประวัติส่วนตัว</a></li>
-
 <li><a href="education.html">การศึกษา</a></li>
-
 <li><a href="portfolio.html">ผลงาน</a></li>
-
 <li><a href="contact.html">ติดต่อ</a></li>
-
 </ul>
 
 </nav>
 
 </header>
 
-<section class="container">
+<div class="container">
+
+<div class="left">
+
+<img src="profile.jpg" alt="Profile">
+
+<h2>นางสาวนารีรัตน์ แสงคำ</h2>
+
+<p>
+นักเรียนระดับชั้นมัธยมศึกษาปีที่ 6<br>
+แผนการเรียนคอมพิวเตอร์
+</p>
+
+</div>
+
+<div class="right">
 
 <h1>ประวัติส่วนตัว</h1>
 
-<p><b>ชื่อ :</b> นาวสาวนารีรัตน์ เเสงคำ.</p>
+<div class="info">
 
-<p><b>ชื่อเล่น :</b>อาร์ตี้</p>
+<b>ชื่อ</b>
+<span>นางสาวนารีรัตน์ แสงคำ</span>
 
-<p><b>วันเกิด :</b>25/03/52</p>
+<b>ชื่อเล่น</b>
+<span>อาร์ตี้</span>
 
-<p><b>อายุ :</b>17 ปี</p>
+<b>วันเกิด</b>
+<span>25 มีนาคม 2552</span>
 
-<p><b>ที่อยู่ :</b>ต.นาป่าอ.เมืองชลบุรีจ.ชลบุรี</p>
+<b>อายุ</b>
+<span>17 ปี</span>
 
-<p><b>ความสามารถ :</b>เขียนโปรเเกรม</p>
+<b>ที่อยู่</b>
+<span>ตำบลนาป่า อำเภอเมืองชลบุรี จังหวัดชลบุรี</span>
 
-<p><b>งานอดิเรก :</b> อ่านหนังสือ เล่นกีฬา เขียนโปรแกรม</p>
+<b>ความสามารถ</b>
+<span>เขียนโปรแกรม HTML, CSS, JavaScript, Python</span>
 
-</section>
+<b>งานอดิเรก</b>
+<span>อ่านหนังสือ เล่นกีฬา เขียนโปรแกรม ฟังเพลง</span>
+
+<b>เป้าหมาย</b>
+<span>ศึกษาต่อด้านวิทยาการคอมพิวเตอร์และพัฒนาซอฟต์แวร์</span>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 My Portfolio | All Rights Reserved
+
+</footer>
 
 </body>
 </html>
