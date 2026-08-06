@@ -6,6 +6,7 @@
 <title>ผลงานและกิจกรรม</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -45,7 +46,7 @@ list-style:none;
 }
 
 nav ul li{
-margin-left:30px;
+margin-left:25px;
 }
 
 nav ul li a{
@@ -56,7 +57,7 @@ transition:.3s;
 }
 
 nav ul li a:hover{
-color:#ffd700;
+color:#FFD700;
 }
 
 .container{
@@ -78,12 +79,11 @@ margin-bottom:10px;
 
 .title p{
 font-size:18px;
-color:#f1f1f1;
 }
 
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 gap:30px;
 }
 
@@ -102,7 +102,7 @@ transform:translateY(-10px);
 
 .card img{
 width:100%;
-height:220px;
+height:230px;
 object-fit:cover;
 }
 
@@ -112,34 +112,19 @@ color:white;
 }
 
 .content h2{
+color:#FFE082;
 margin-bottom:10px;
-color:#ffe082;
 }
 
 .content p{
 line-height:1.8;
-margin-bottom:15px;
-}
-
-.btn{
-display:inline-block;
-padding:10px 25px;
-background:#ffd700;
-color:#000;
-text-decoration:none;
-border-radius:30px;
-font-weight:bold;
-}
-
-.btn:hover{
-background:white;
 }
 
 footer{
 text-align:center;
 padding:30px;
 color:white;
-margin-top:50px;
+margin-top:40px;
 }
 
 @media(max-width:768px){
@@ -163,6 +148,7 @@ font-size:35px;
 }
 
 }
+
 </style>
 
 </head>
@@ -178,7 +164,7 @@ font-size:35px;
 <ul>
 <li><a href="index.html">หน้าหลัก</a></li>
 <li><a href="about.html">ประวัติส่วนตัว</a></li>
-<li><a href="education.html">การศึกษา</a></li>
+<li><a href="education.html">ประวัติการศึกษา</a></li>
 <li><a href="portfolio.html">ผลงาน</a></li>
 <li><a href="contact.html">ติดต่อ</a></li>
 </ul>
@@ -191,62 +177,52 @@ font-size:35px;
 
 <div class="title">
 <h1>ผลงานและกิจกรรม</h1>
-<p>ผลงานและกิจกรรมที่ภาคภูมิใจ</p>
+<p>กิจกรรมที่ได้เข้าร่วมระหว่างการศึกษา</p>
 </div>
 
 <div class="gallery">
 
 <div class="card">
-<img src="project1.jpg" alt="">
-<div class="content">
-<h2>เว็บไซต์ Portfolio</h2>
-<p>กิจกรรมต่อต้านยาเสพติด</p>
-<a href="#" class="btn">ดูผลงาน</a>
-</div>
-</div>
-
-<div class="card">
-<img src="project2.jpg" alt="">
-<div class="content">
-<h2>กิจกรรมสวดมนต์</h2>
-<p>ออกแบบและพัฒนาเว็บไซต์ร้านกาแฟด้วย HTML CSS และ JavaScript</p>
-<a href="#" class="btn">ดูผลงาน</a>
-</div>
-</div>
-
-<div class="card">
-<img src="project3.jpg" alt="">
-<div class="content">
-<h2>แข่งขันทักษะคอมพิวเตอร์</h2>
-<p>เข้าร่วมการแข่งขันด้านคอมพิวเตอร์และพัฒนาทักษะการเขียนโปรแกรม</p>
-<a href="#" class="btn">ดูรายละเอียด</a>
-</div>
-</div>
-
-<div class="card">
-<img src="project4.jpg" alt="">
+<img src="activity1.jpg" alt="จิตอาสา">
 <div class="content">
 <h2>กิจกรรมจิตอาสา</h2>
-<p>เข้าร่วมกิจกรรมจิตอาสาและบำเพ็ญประโยชน์เพื่อสังคม</p>
-<a href="#" class="btn">ดูรูปภาพ</a>
+<p>
+เข้าร่วมกิจกรรมบำเพ็ญประโยชน์และพัฒนาพื้นที่ภายในโรงเรียน
+เพื่อปลูกฝังจิตสาธารณะ ความรับผิดชอบ และการทำงานร่วมกับผู้อื่น
+</p>
 </div>
 </div>
 
 <div class="card">
-<img src="project5.jpg" alt="">
+<img src="activity2.jpg" alt="โรงเรียนสีขาว">
 <div class="content">
-<h2>กิจกรรมวันวิทยาศาสตร์</h2>
-<p>ร่วมจัดนิทรรศการและนำเสนอผลงานด้านเทคโนโลยีและนวัตกรรม</p>
-<a href="#" class="btn">ดูรายละเอียด</a>
+<h2>โรงเรียนสีขาว</h2>
+<p>
+เข้าร่วมกิจกรรมโรงเรียนสีขาว เพื่อส่งเสริมการป้องกันยาเสพติด
+สร้างคุณธรรม จริยธรรม และเสริมสร้างสภาพแวดล้อมที่ปลอดภัยในโรงเรียน
+</p>
 </div>
 </div>
 
 <div class="card">
-<img src="project6.jpg" alt="">
+<img src="activity3.jpg" alt="เพื่อนช่วยเพื่อน">
 <div class="content">
-<h2>เกียรติบัตร</h2>
-<p>รวบรวมเกียรติบัตรจากการแข่งขันและการเข้าร่วมกิจกรรมต่าง ๆ</p>
-<a href="#" class="btn">ดูเกียรติบัตร</a>
+<h2>กิจกรรมเพื่อนช่วยเพื่อน</h2>
+<p>
+เข้าร่วมกิจกรรมเพื่อนช่วยเพื่อน โดยให้คำแนะนำและช่วยเหลือเพื่อนในการเรียน
+รวมถึงการทำกิจกรรมร่วมกันเพื่อสร้างความสามัคคี
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="activity4.jpg" alt="กีฬาสี">
+<div class="content">
+<h2>กิจกรรมกีฬาสี</h2>
+<p>
+เข้าร่วมการแข่งขันและกิจกรรมกีฬาสีของโรงเรียน
+ฝึกความมีน้ำใจนักกีฬา ความรับผิดชอบ และการทำงานเป็นทีม
+</p>
 </div>
 </div>
 
